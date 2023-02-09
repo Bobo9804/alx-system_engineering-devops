@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -e /tmp/iamafile ] && echo "/tmp/iamafile: $(file /tmp/iamafile)" || echo "/tmp/iamafile: No such file or directory"
+file_path="/tmp/iamafile"; [ -e $file_path ] && echo "$file_path: $(file "$file_path")" || echo "$file_path: No such file or directory"
