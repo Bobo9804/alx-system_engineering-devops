@@ -1,0 +1,2 @@
+#!/bin/bash
+file_path="/tmp/iamafile"; if [ -e "$file_path" ]; then echo "$file_path: $(file "$file_path")"; else echo "$file_path: No such file or directory"; fi
